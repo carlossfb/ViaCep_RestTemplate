@@ -13,13 +13,10 @@ public class CepController {
 
 
     @GetMapping("/cep/{cep}")
-    public ResponseEntity<Cep> hello(@PathVariable("cep") String cepUser) throws Exception {
+    public ResponseEntity<Cep> hello(@PathVariable("cep") String cepUser){
 
       Cep cep = run(cepUser);
-      return new ResponseEntity<>(cep, HttpStatus.OK);
+      return ResponseEntity.ok(cep);
     }
 
-    public Cep run(String cepUSer) throws Exception{
-        return  new RestTemplate().getForEntity("https://viacep.com.br/ws/"+cepUSer+"/json/", Cep.class).getBody();
-    }
 }
