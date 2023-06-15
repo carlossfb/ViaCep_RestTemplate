@@ -3,7 +3,7 @@ package com.spring.cep.service;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import com.spring.cep.Cep;
+import com.spring.cep.model.Cep;
 
 @Service
 public class CepService {

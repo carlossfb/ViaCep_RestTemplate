@@ -1,4 +1,4 @@
-package com.spring.cep;
+package com.spring.cep.model;
 
 import lombok.Getter;
 import lombok.Setter;

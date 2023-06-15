@@ -1,6 +1,6 @@
 package com.spring.cep.controller;
 
-import com.spring.cep.Cep;
+import com.spring.cep.model.Cep;
 import com.spring.cep.service.CepService;
 
 import org.springframework.beans.factory.annotation.Autowired;
